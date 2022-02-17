@@ -1,0 +1,94 @@
+
+
+
+
+.tabla{   
+  	justify-content: center;
+    margin-right: 4rem;  
+    margin-left: 4rem;
+  }
+  
+ table {
+ width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+ }
+
+ 
+
+  
+    tbody{
+    overflow-x:auto; 
+    }
+
+th{
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(74, 92, 192);
+    text-transform: uppercase;
+  }
+  
+th.opcion1{
+	width: 7%;
+}  
+
+th.opcion2{
+	width: 8%;
+}  
+
+th.email{
+	width: 23%;
+}  
+  td{
+   	display: table-cell;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(74, 92, 192);
+    border: solid 1px rgba(4, 0, 241, 0.1);
+  
+    
+  }
+
+
+
+thead {
+	
+	
+	background-color: rgba(74, 92, 192, 0.3);
+    text-align: center;
+	
+}
+
+tr {
+    background-color: rgba(83, 145, 196, 0.1);
+    
+}
+
+td i {
+    text-align:center;
+}
+
+.icono_editar{
+	color: rgba(64, 9, 116, 0.6);
+	justify-content: center;
+}
+
+.icono_editar:hover{
+	color: rgba(64, 9, 116);
+}
+
+.icono_eliminar{
+	color: rgba(104, 4, 4, 0.6);
+	justify-content: center;
+}
+
+.icono_eliminar:hover{
+	color: rgba(104, 4, 4);
+}
+
+#contenedor{
+
+   margin-top: 10rem;
+  }

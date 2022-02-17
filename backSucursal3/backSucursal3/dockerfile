@@ -1,0 +1,4 @@
+FROM openjdk:11-jdk-slim
+COPY "./target/backSucursal3-0.0.1-SNAPSHOT.war" "app.war"
+EXPOSE 8099
+ENTRYPOINT ["java","-jar","app.war"]

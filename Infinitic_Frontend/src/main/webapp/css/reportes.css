@@ -1,0 +1,14 @@
+.contenedor_agregar{
+	border-bottom: 0.1px solid rgba(140, 143, 145, 0.8);
+	align-items: center;
+    margin-top: 6rem;
+    background: rgba(184, 184, 194, 0.5); 
+    overflow:hidden  
+  }
+  
+     .sucursal{
+   padding: 15px; 
+	text-align: center;
+  font-size: 2.5rem;
+   color: rgb(107, 103, 103);
+  }

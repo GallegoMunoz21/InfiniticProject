@@ -1,0 +1,338 @@
+/*===== Formulario para agregar registros =====*/
+
+
+.formulario {
+	width: 100%;
+	justify-content: center;
+}
+
+.formulario_registro {
+	width: 360px;
+	height: 560px;
+	background: linear-gradient(140deg, rgb(172, 177, 250),
+		rgb(150, 173, 250), rgb(150, 173, 250), rgb(150, 179, 243),
+		rgb(144, 173, 235), rgb(168, 194, 250), rgb(168, 194, 252));
+	border-radius: 10%;
+	justify-content: center;
+
+}
+
+.formulario_registro2 {
+	width: 360px;
+	height: 620px;
+	background: linear-gradient(140deg, rgb(172, 177, 250),
+		rgb(150, 173, 250), rgb(150, 173, 250), rgb(150, 179, 243),
+		rgb(144, 173, 235), rgb(168, 194, 250), rgb(168, 194, 252));
+	border-radius: 10%;
+	justify-content: center;
+
+}
+
+.formulario_titulo {
+	font-family: 'Franklin Gothic Medium', sans-serif;
+	font-size: 25px;
+	background-color: rgba(127, 183, 247);
+	color: rgb(67, 65, 214);
+	padding: 1rem;
+	text-align: center;
+	border-top-right-radius: 25px;
+	border-bottom: 3px solid rgb(194, 210, 255);
+	margin-bottom: 3rem;
+}
+
+.form_div {
+	position: relative;
+	height: 48px;
+	margin-top: 2rem;
+}
+
+.formulario_input {
+	position: absolute;
+	margin-left: 5rem;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 80%;
+	font-size: 1rem;
+	border: none;
+	border-bottom: 2px solid #8978eb;
+	outline: none;
+	padding: 1rem;
+	background: none;
+}
+
+.formulario_icono {
+	position: absolute;
+	top: 9px;
+	margin-left: 4rem;
+	color: #7875B5;
+}
+
+.formulario_input:focus {
+	border-bottom: 2px solid rgb(190, 181, 245);
+}
+
+.boton_agregar {
+	display: block;
+	margin-top: 1rem;
+	margin-left: 30%;
+	border: none;
+	width: 40%;
+	color: rgb(203, 204, 214);
+	font-size: 16px;
+	background: rgb(22, 4, 102, 0.6);
+	padding: 8px;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.boton_agregar:hover {
+	background: rgb(22, 4, 102);
+}
+
+
+.modal-contenedor {
+	position: fixed;
+	background: rgba(2, 9, 75, 0.7);
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	display: flex;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.modal-contenedor.mostrar {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal {
+	
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 30px;
+}
+
+
+
+.boton_cerrar {
+	background: rgb(67, 65, 214);
+	position: absolute;
+	right: 0;
+	color: black;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+/*===== Estilo del contenedor agregar registro + titulo =====*/
+  .contenedor_agregar{
+	 align-items: center;
+    margin-right: 4rem;  
+    margin-left: 4rem;
+    margin-top: 10rem;
+    background: rgba(2, 9, 75, 0.2);   
+    overflow:hidden
+   
+  }
+  
+  
+  .agregar_user{
+  float: left;
+   width: 20%;
+   padding: 10px;       
+  }
+  
+  
+  .boton_abrir {
+	justify-content: center;
+	margin-left: 2rem;
+	border: none;
+	text-align: center;
+	color: rgba(0, 0, 0);
+	padding: 15px;
+	cursor: pointer;
+}
+
+.boton_abrir:hover {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-solid{
+	color: rgb(1, 112, 19);
+	margin-right: 1.3rem;
+}
+  
+   .sucursal{
+float: right;
+   width: 80%;
+   padding: 15px; 
+text-align: center;
+  font-size: 2.5rem;
+   color: rgb(107, 103, 103);
+  }
+  
+ /*===== Módulo de productos =====*/ 
+ 
+ .producto{
+  float: left;
+   width: 10%;
+   padding: 15px; 
+   align-items:center      
+  }
+   .agregar_producto{
+  float: left;
+   width: 20%;
+   padding: 10px;
+   align-items:center
+     
+  }
+  
+  .sucursal2{
+float: right;
+   width: 70%;
+   padding: 15px; 
+text-align: center;
+  font-size: 2.5rem;
+   color: rgb(107, 103, 103);
+  }
+
+.btncargar_archivo{
+	display: block;
+	border: none;
+	margin-bottom: .1rem;
+	width: 100%;
+	color: rgb(203, 204, 214);
+	font-size: 14px;
+	padding: 4px;
+	cursor: pointer;
+	
+}
+
+.btnsubir_archivo{
+	display: block;
+	border: none;
+
+	width: 49%;
+	color: rgb(203, 204, 214);
+	font-size: 14px;
+	background: rgb(50, 12, 56, 0.4);
+	padding: 4px;
+	cursor: pointer;
+	}
+
+h6{
+	font-size: .7rem;
+	margin: .1rem;
+}
+  
+   .update_input2{ 
+    text-align: center;
+    font-size: 1rem;
+    background: none;
+    border: solid 1px rgb(107, 103, 103, 0.3);
+	width: 100%;
+    padding: 10px 35px; 
+  }
+/*===== Formulario para actualizar registros =====*/
+
+ 
+  .contenedor_actualizar{ 
+  	justify-content: center;
+    margin-right: 4rem;  
+    margin-left: 4rem;
+    padding: .4rem;
+    background: rgba(2, 9, 75, 0.2);   
+  }
+  
+  .formulario_update{ 
+
+ 	width: 100%;
+ 	justify-content: center; 
+ 	 border-spacing: 1px;  
+  }
+  
+   .form_update{
+ 	display: table-cell; 
+ 	overflow-x:auto; 
+  }
+  
+  .update_input{ 
+    font-size: 1rem;
+    text-align:center;
+    background: none;
+    border: solid 1px rgb(107, 103, 103, 0.3);
+	width: 100%;
+    padding: 10px 60px; 
+  }
+  
+
+ 
+  
+  label{
+  color: rgba(74, 92, 192);
+  }
+
+ .botones_update{
+ 	display: table-cell;
+    border-collapse: separate;
+
+
+ 
+  }
+
+  .boton_actualizar {
+  display: table-cell;
+	border: none;
+	color: rgb(203, 204, 214);
+	font-size: 16px;
+	background: rgb(102, 4, 94, 0.8);
+	padding: 8px;
+	 
+	cursor: pointer;
+	
+}
+
+  .boton_actualizar:hover {
+	background: rgb(102, 4, 94);
+}
+
+ .boton_cancelar {
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	background: rgb(50, 12, 56, 0.8);
+	padding: 8px;
+	 
+	cursor: pointer;
+	
+}
+
+  .boton_cancelar:hover {
+	background: rgb(50, 12, 56, 0.3);
+}
+
+
+  
+
+   
+     
+ 
+
+
+  

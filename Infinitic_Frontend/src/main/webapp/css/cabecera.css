@@ -1,0 +1,246 @@
+/*=============== BASE ===============*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*=============== Layout ===============*/
+.container{
+  max-width: 1000px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*=============== Cabecera ===============*/
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(140deg, rgb(5, 24, 196), rgba(86, 176, 218),rgb(5, 24, 196));   
+  
+  
+}
+
+
+
+
+/*=============== Nav ===============*/
+.nav{
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_lista{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  
+}
+
+img.nav_home{
+  width: 80%;
+  display: flex;
+  margin-top: .5rem;
+  }
+
+
+/*=============== Menú Responsive ===============*/
+
+
+/*=============== Estilo del icono que despliega el menú responsive ===============*/
+
+.nav_toggle{
+  color: rgb(0, 255, 255);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/*=============== Estilo del menú desplegable ===============*/
+
+@media screen and (max-width: 999px){
+  .nav_menu{
+    position: fixed;
+    width: 100%; 
+    height: 70%;
+    background: linear-gradient(140deg, rgb(5, 24, 196),rgb(150, 156, 240), rgb(126, 162, 241), rgb(152, 213, 241),rgb(5, 24, 196));   
+    top: -100%;
+    left: 0;
+    padding: 1.5rem;
+    transition: .4s;
+    z-index: 100;
+    
+  }
+}
+
+/*=============== Estilo del icono que cierra el menú desplegable ===============*/
+  
+.nav_cerrar{
+  color: rgb(56, 1, 252);
+  font-size: 1.8rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*=============== Estilo de las opciones del menú ===============*/
+
+.nav_link{
+  
+  font: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(6, 0, 61);
+}
+
+.nav_link:hover{
+  color: rgb(255, 253, 253);
+}
+
+.nav_link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background: rgb(255, 253, 253);/*linear-gradient(45deg, rgb(255, 253, 253,0.8),rgb(255, 255, 255,0.8), rgb(14, 5, 134), rgb(14, 5, 134), rgb(3, 0, 7));*/  
+
+  transition: 1s ease-out;
+  
+}
+
+.nav_link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/*=============== Estilo del Submenú ===============*/
+.container ul li ul{
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  text-align: justify;
+  margin-left: -5%;
+}
+
+.container ul li ul li{
+  width: 100%;
+}
+
+.container ul li:hover ul{
+  display: block;
+}
+
+/*=============== Estilo de los botones del submenú ===============*/
+
+.desplegar{
+  color: rgb(0, 255, 248);
+  font-size: 1.3rem;
+}
+
+.fa-user:hover{
+  color: rgb(0, 255, 255);
+}
+
+.nav_desconectar{
+  color: rgb(8, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
+.nav_desconectar:hover{
+  color: rgba(104, 4, 4, 0.644);
+}
+
+.nav_usuarioactivo{
+  color: rgb(4, 13, 139);
+  font-size: 1rem;
+}
+
+
+
+
+/* Mostrar menú desplegable */
+.show-menu{
+  top: 0;
+}
+
+
+/*=============== Ajuste del menú al agrandar la pantalla después de tener menos de 1000px de ancho ===============*/
+@media screen and (min-width: 1000px){
+  body{
+    margin: auto;
+  
+  }
+
+ 
+ 
+  .nav{
+    height: calc(3.5rem + 1.5rem);
+  }
+  .nav_cerrar,
+  .nav_toggle{
+    display: none;
+  }
+  .nav_lista{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav_link{
+    text-transform: none;
+    font-weight: normal;
+  }
+}
+
+
+/*=============== Ajuste de la distribucion del menu ===============*/
+
+@media screen and (max-width: 320px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+}
+
+@media screen and (min-width: 706px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.nav_home{
+  width: 80%;
+  display: flex;
+  }
+}
+
+@media screen and (min-width: 411px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.nav_home{
+  width: 80%;
+  display: flex;
+  }
+}

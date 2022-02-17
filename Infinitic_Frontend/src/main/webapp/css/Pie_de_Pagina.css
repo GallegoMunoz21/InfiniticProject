@@ -1,0 +1,75 @@
+/*=============== Layout ===============*/
+
+.grid{
+    display: grid;
+  }
+  
+/*=============== Pie de página ===============*/
+.footer{
+	
+position: absolute; 
+bottom: 0;
+overflow: hidden;
+  }
+   
+  .footer__container{
+    row-gap: 10rem;
+  }
+  
+  
+  .footer__social{
+    display: flex;
+    column-gap: .75rem;
+  }
+  
+  .footer__social-link{
+    display: inline-flex;
+    background: linear-gradient(136deg, hsl(251, 100%, 18%) 0%, hsl(234, 49%, 63%) 100%);
+    padding: .25rem;
+    border-radius: .25rem;
+    color: hsl(14, 4%, 100%);
+    font-size: 1rem;
+  }
+  
+  .footer__social-link:hover{
+    background: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
+  }
+  
+  .footer__title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .footer__links{
+    display: grid;
+    row-gap: .35rem;
+  }
+  
+  .footer__link{
+    font-size: .813rem;
+    color: rgb(43, 6, 104);
+    transition: .3s;
+  }
+
+  .footer_dato{
+    font-size: .813rem;
+    color: rgb(43, 6, 104);
+    transition: .3s;
+  }
+  
+  
+  .footer__link:hover{
+    color: hsl(14, 4%, 100%);
+  }
+  
+
+
+  @media screen and (min-width: 767px){
+    .footer__container{
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      column-gap: 5rem;
+    }
+}
+  

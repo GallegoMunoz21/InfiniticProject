@@ -1,0 +1,367 @@
+/*Contenedor padre de la columna de las ventas que serán agregadas*/
+ 
+  .ventas{   
+    width: 40%;
+    float:left;
+  	justify-content: center;
+
+    border-right: 0.1px solid rgba(140, 143, 145, 0.2);
+    padding: 10px;
+    background: rgba(184, 184, 194, 0.5);
+  }
+  
+  
+  .productos{
+
+   	margin-left: .5rem;
+  	margin-right: .5rem;
+  	margin-top: 1rem;
+    border-top: 1px solid rgba(140, 143, 145, 0.9);
+    padding-top: .6rem;
+    
+    
+  }
+  
+  .clientes{
+  
+  	  display: flex;
+  flex-flow: row;
+  padding: 8px;
+  }
+  
+
+  
+  .datos_productos{   
+ 	margin-top: 1rem;
+   	width: 58%;
+   	float:right;
+   	border-left: .5px solid rgba(140, 143, 145, 0.2);
+    
+    
+  }
+  
+  .buscar_productos{   
+ 	margin-top: 4rem;
+   	width: 42%;
+   	float:left;  
+  }
+
+  .titulo{
+ 	font-family: 'Franklin Gothic Medium', sans-serif;
+	font-size: 25px;
+	color: rgb(0, 0, 0, 0.5);
+	padding-top: .2rem;
+	text-align: center;
+ }
+ 
+ .form_div {
+ 	
+	margin-top: .5rem;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.form_div2 {
+
+	margin-top: .5rem;
+	width: 100%;
+	
+}
+
+.boton_cliente{
+	margin: .5rem;
+	display: inline-block;
+	justify-content: center;
+	margin-top: 1.1rem;	
+}
+ 
+  .input_clientes{
+  	width: 100%;
+  	margin-top: 1rem;
+	border: none;
+	text-align: center;
+	background: none;
+ 	padding: 4px;
+ 	border-bottom: 1px solid rgba(140, 143, 145);
+  }
+  
+  .input_clientes:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+    .input_buscar{
+    justify-content: center;
+    margin-top: 1rem;
+  	width: 85%;
+	border: none;
+	text-align: left;
+	background: none;
+ 	padding: 4px;
+ 	border-bottom: 1px solid rgba(140, 143, 145);
+  }
+  
+
+.btn_buscar{
+	border: none;
+	color: rgb(0, 0, 0, 0.5);
+	font-size: 16px;
+	background: rgba(76, 76, 78, 0.4); 
+	padding: 6px;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.btn_buscar:hover{
+	background: rgba(76, 76, 78, 0.1);
+}
+
+
+
+/*------------*/
+ 
+.contenedor_agregar{
+	border-bottom: 0.1px solid rgba(140, 143, 145, 0.2);
+	align-items: center;
+    margin-top: 6rem;
+    background: rgba(184, 184, 194, 0.5); 
+    overflow:hidden  
+  }
+  
+    .sucursal{
+   padding: 15px; 
+	text-align: center;
+  font-size: 2.5rem;
+   color: rgb(107, 103, 103);
+  }
+
+ /*Contenedor padre de la columna de las ventas generadas*/
+ 
+  .tabla_ventas{   
+    width: 60%;
+    float:right;
+  	justify-content: center;  
+    background: rgba(184, 184, 194, 0.5);
+	border-left: 0.1px solid rgba(140, 143, 145, 0.2);
+    padding: 10px;
+  }
+ 
+ 
+ 
+ /*Estilo del acumulador del número de factura*/
+ .factura{
+	font-size: 1rem;
+ 	text-align: center;
+ 	margin-bottom: 1rem;
+ 	font-family: Times New Roman;
+ 	color: rgba(108, 108, 110);
+ }
+
+ .input_nrofactura{
+ 	justify-content: center;
+ 	width: 15%;
+ 	text-align: center;
+ 	background: none;
+ 	border: 0.1px solid rgba(140, 143, 145, 0.3);
+ 	padding: 6px;
+ }
+/*Estilo de la Tabla de ventas*/
+ table {
+	width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 1px;
+    overflow-x: auto;
+ }
+
+  
+ tbody{
+    overflow-x:auto; 
+  }
+
+ th{
+	
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(108, 108, 110);
+    text-transform: uppercase;
+  }
+  
+   td{
+   	display: table-cell;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(74, 92, 192);
+    border: solid 1px rgba(4, 0, 241, 0.1);  
+  }
+
+thead {	
+   background-color: rgba(137, 139, 150, 0.1);
+   text-align: center;	
+  }
+
+tr {
+    background-color: rgba(140, 143, 145, 0.1); 
+  }
+  
+  
+/*Estilo del acumulador del número de factura*/
+
+.cuenta{
+	margin-right: 8rem;
+	margin-left: 8rem;
+
+ 	justify-content: center;
+ 	margin-top: 5rem;
+ 	padding: 6px;
+}
+
+.facturasubtotal{
+	display: flex;
+	justify-content: center;
+	font-size: 1.1rem;
+
+ 	text-align: center;
+ 	
+ 	margin: 1rem;
+ 	font-family: Times New Roman;
+ 	color: rgba(108, 108, 110);
+
+ }
+
+.facturatotal{
+	display: flex;
+	justify-content: center;
+	font-size: 1.7rem;
+ 	text-align: center;
+ 	margin-bottom: 1rem;
+ 	font-family: Times New Roman;
+ 	color: rgba(108, 108, 110);
+
+}
+
+.subtotal{
+	margin-left: 1rem;
+	margin-top: .5rem;
+}
+
+.total{
+	margin-right: .5rem;
+	margin-top: 1rem;
+}
+
+.input_factura{
+	background: none;
+ 	border: 0.7px solid rgba(140, 143, 145);
+ 	padding: 10px;
+ 	margin-top: 1rem;
+ 	text-align: center;
+	
+}
+
+.input_factura1{
+	border: none;
+	border-bottom: 2px solid rgba(140, 143, 145);
+	text-align: center;
+	background: none;
+	margin: .5rem;
+ 	padding: 1px;
+ 	margin-right: 1rem;
+	
+}
+
+/*Estilo de los botones*/
+
+.boton_venta{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;	
+}
+
+.btn_generar_venta{
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	background: rgba(145, 141, 161, 0.9);
+	padding: 8px;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.btn_generar_venta:hover{
+	background: rgba(145, 141, 161, 0.3);
+}
+
+.btn_nueva_venta{
+	margin-left: .5rem;
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	background: rgba(26, 26, 27, 0.6); 
+	padding: 8px;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.btn_nueva_venta:hover{
+	background: rgba(26, 26, 27, 0.9);
+}
+
+
+
+@media screen and (max-width: 1279px){
+  .ventas{ 
+  display: inline-flex;  
+	float: none;
+	width: 100%;
+ 
+  }
+  
+  .productos{
+	
+ 	margin: .1rem;
+  	margin-top: -.7rem;
+    border-top: none;
+  
+    
+    
+  }
+  
+  .clientes{
+
+	
+ 	margin: 3rem;
+  	margin-top: 0;
+    border-top: none;
+  
+    
+    
+  }
+  
+  .input_clientes{
+  	 display: inline-flex;  
+  }
+  
+  
+  .tabla_ventas{
+  margin-top: 1rem;  
+  float: none;
+    width: 100%;
+    
+
+  }
+  
+  .boton_venta{
+	margin: 1rem;	
+}
+
+
+ .sucursal{
+    width: 100%;
+   float: none;
+  }
+  
+
+}

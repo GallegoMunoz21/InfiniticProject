@@ -1,0 +1,57 @@
+/*===== Estilo de la letra y tamaño =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+
+
+/*===== Fondo degradado =====*/
+  body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        background: linear-gradient(140deg, rgb(5, 24, 196, 0.8),rgba(75, 85, 228, 0.3), rgb(108, 99, 226,0.2), rgba(86, 176, 218, 0.3),rgb(5, 24, 196,0.8));   
+  }
+
+
+
+  
+/*=============== Botón para retornar a la primera parte de la página===============*/
+.scrollup{
+      position: fixed;
+      background: #ffffff;
+      right: 1rem;
+      bottom: -20%;
+      display: inline-flex;
+      padding: .3rem;
+      border-radius: .25rem;
+      z-index: 10;
+      opacity: .8;
+      transition: .4s;
+    }
+    
+    .scrollup__icon{
+      font-size: 1.25rem;
+      color: rgb(17, 0, 250);
+    }
+    
+    .scrollup:hover{
+      box-shadow: #555353;
+      opacity: 1;
+    }
+    
+    /* Ubicación del botón para regresar arriba*/
+    .show-scroll{
+      bottom: 3rem;
+    }
+    
+    /*=============== Color de la barra para ir bajando por la página web ===============*/
+    ::-webkit-scrollbar{
+      width: 0.6rem;
+      background: #9c9898;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+      background: #272525;
+      border-radius: .5rem;
+    }
